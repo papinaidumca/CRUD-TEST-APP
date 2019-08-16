@@ -4,4 +4,35 @@
   <artifactId>CRUD-APP</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  
+  <build>
+  	<!--i had expected the following WAR file inside my container so i had written finalName -RestClientProject-0.0.1-SNAPSHOT.war into RestClientProject.war -->
+	<finalName>CRUD-APP</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+				</configuration>
+			</plugin>
+	
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
+  
+  
+  
+  
 </project>
