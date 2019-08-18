@@ -41,7 +41,7 @@
   
   <build>
   	<!--i had expected the following WAR file inside my container so i had written finalName -RestClientProject-0.0.1-SNAPSHOT.war into RestClientProject.war -->
-	<finalName>CRUD-APP</finalName>
+	<!-- <finalName>CRUD-APP</finalName> -->
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
