@@ -10,7 +10,7 @@
     <title></title>
 
     <!-- Bootstrap -->
-   <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">  -->
+   <link href="css/custom.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -27,63 +27,40 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    
+    <hr>
 <div class="container"> 
-	<!-- <div class="row justify-content-center">
+	<div class="row justify-content-center">
+		<table class="container" style="background-color:#525b75">
+				<thead>
+					<tr class="text-white"><th><h1 class="col-md-6">Enter Employee Details</h1></th>
+						<!-- <th><h2><a href="#" class="btn btn-info">Add Customer</a></h2></th> -->
+					</tr>		
+				</thead>
+		</table>
+	
 		<form action="" method="post">
+		<hr>
 			<div class="form-group">
-				<label>Name</label>
-				<input type="text" name="name" class="form-control" value="Enter your Name">
+				<label>Employee Name</label>
+				<input type="text" name="name" class="form-control" placeholder="Employee Name">
 			</div>
 			<div class="form-group">
-				<label>Location</label>
-				<input type="text" name="name" class="form-control" value="Enter your Location">
+				<label>Salary</label>
+				<input type="text" name="name" class="form-control" placeholder="Salary">
 			</div>
 		
 			<div class="form-group">
-				<button type="submit" name="save" class="btn btn-primary">Save</button>
+				<input type="submit" value="Save" class="btn btn-primary"/>
+				<input type="reset"  value="Reset" class="btn btn-primary"/>
+				<a href="employeeList.jsp" class="btn btn-primary">Back</a>
 			</div>
 		
 		</form>  
-	</div> -->
-	
-    <hr>
-    
-	<div class="row justify-content-center">	
-			<table class="container" style="background-color:#525b75">
-				<thead>
-					<tr class="text-white"><th><h1 class="col-md-6">All Employees List</h1></th>
-						<th><h2><a href="addEmployee.jsp" class="btn btn-info">Add Employee</a></h2></th>
-					</tr>		
-				</thead>
-			</table>
-			
-			<hr>
-			
-			<table class="table" >
-				<thead>
-					<tr>
-						<th>Employee Name</th>
-						<th>Salary</th>
-						<th>Actions</th>
-					</tr>
-				</thead>
-				<tr>
-					<td>Raju</td>
-					<td>40000</td>
-					<td>
-						<a href="#" class="btn btn-default">View</a>
-						<a href="#" class="btn btn-info">Edit</a>
-						<a href="#" class="btn btn-danger">Delete</a>
-					</td>
-				</tr>
-				
-			</table>
-	</div>
+	</div> 
 	
 </div>
 
-  <hr>
+<hr>
   
   </body>
 </html>

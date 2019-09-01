@@ -1,19 +1,17 @@
 package com.aarvee.controller;
 
 import com.aarvee.beans.EmployeeBean;
-import com.aarvee.dao.EmployeeDao;
-import com.aarvee.dao.EmployeeDaoImpl;
+import com.aarvee.service.EmployeeServiceImpl;
 
 public class EmployeeControllerTest {
 	
 	public static void main(String[] args) {
 		
-		//EmployeeBean employeeBean = new EmployeeBean();
+		EmployeeServiceImpl employeeServiceImpl = new EmployeeServiceImpl();
 		
-		EmployeeDao employeeDao = new EmployeeDaoImpl();
-
-        for (EmployeeBean employeeBean : employeeDao.getAllEmployeeList()) {
-            System.out.println("EmployeeID : " + employeeBean.getEmpolyeeID());
+		System.out.println("EmployeeID:  EmployeeName: Salary: ");
+        for (EmployeeBean emp : employeeServiceImpl.getAllEmployeeList()) {
+            System.out.println("   "+emp.getEmpolyeeID()+"   "+emp.getEmployeeName()+"   "+emp.getSalary());
         }
 		
 	}

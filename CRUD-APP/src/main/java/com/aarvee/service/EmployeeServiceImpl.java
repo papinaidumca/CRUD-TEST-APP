@@ -20,8 +20,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<EmployeeBean> getAllEmployeeList() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		
+		
+		return lo_employeeDaoImpl.getAllEmployeeList();
 	}
 
 	@Override
