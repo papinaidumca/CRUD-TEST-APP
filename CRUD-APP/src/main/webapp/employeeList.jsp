@@ -22,11 +22,12 @@
     <![endif]-->
   </head>
 <body>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <h2><a href="welcome" class="btn btn-default">Check-For-log4j</a></h2>
     
 <div class="container"> 
 	<!-- <div class="row justify-content-center">
@@ -84,6 +85,5 @@
 </div>
 
   <hr>
-  
   </body>
 </html>

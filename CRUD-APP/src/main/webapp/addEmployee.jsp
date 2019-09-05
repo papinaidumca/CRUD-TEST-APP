@@ -32,7 +32,7 @@
 	<div class="row justify-content-center">
 		<table class="container" style="background-color:#525b75">
 				<thead>
-					<tr class="text-white"><th><h1 class="col-md-6">Enter Employee Details</h1></th>
+					<tr class="text-white"><th><h2 class="col-md-6">Enter Employee Details</h2></th>
 						<!-- <th><h2><a href="#" class="btn btn-info">Add Customer</a></h2></th> -->
 					</tr>		
 				</thead>
